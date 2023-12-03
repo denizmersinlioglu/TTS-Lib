@@ -144,7 +144,7 @@ def get_user_data_dir(appname):
     elif sys.platform == "darwin":
         ans = Path("~/Library/Application Support/").expanduser()
     else:
-        ans = Path.home().joinpath(".local/share")
+        ans = Path.home().joinpath("/workspace/TTS/models")
     return ans.joinpath(appname)
 
 
